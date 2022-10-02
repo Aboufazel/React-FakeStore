@@ -22,11 +22,13 @@ const Login = ()=>{
             <form onSubmit={manageSubmit}>
                 <Input onChane={manageChange} value={info.username}/>
                 <Input onChane={manageChange} value={info.pass}/>
-                <button type={"submit"}>
-                    {"ورود به فروشگاه"}
-                </button>
+                 <Link to={"/"}>
+                     <button type={"submit"}>
+                         {"ورود به فروشگاه"}
+                     </button>
+                 </Link>
             </form>
-            <Link to={"/"} className={"signUp"}>
+            <Link to={"sign"} className={"signUp"}>
                 {"عضو جدید هستید؟! عضویت"}
             </Link>
         </div>

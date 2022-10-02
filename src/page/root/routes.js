@@ -5,6 +5,7 @@ import About from "../About/About";
 import Contact from "../Contact/Contact";
 import SecondLayout from "../../components/layout/SecondLayout";
 import Login from "../Login/Login";
+import SignUp from "../SignUp/SignUp";
 
 
 const routes = createBrowserRouter([
@@ -32,7 +33,10 @@ const routes = createBrowserRouter([
             {
                 path: "login",
                 element: <Login/>
-            }
+            },{
+                path: "sign",
+                element: <SignUp/>
+            },
         ]
     }
 ])
