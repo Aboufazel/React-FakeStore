@@ -1,0 +1,11 @@
+.ContactItems{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .ContactForm{
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+    gap: 15px;
+  }
+}

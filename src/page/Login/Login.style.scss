@@ -1,0 +1,24 @@
+.LoginPage{
+  display: flex;
+  flex-direction: column;
+  margin: 55px;
+  justify-content: center;
+  align-items: center;
+  h2{
+    margin: 35px 0;
+    color: #004f44;
+  }
+  form{
+    display: flex;
+    width: 20%;
+    flex-direction: column;
+     gap: 15px;
+  }
+}
+
+.signUp{
+  text-decoration: none;
+  color: #49beb7;
+  font-weight: 700;
+  margin: 25px 0;
+}

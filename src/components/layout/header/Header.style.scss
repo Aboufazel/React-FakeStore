@@ -1,0 +1,57 @@
+@import "../../style/variable";
+
+.header{
+   background-color: $backgroundColor;
+  padding: 20px 20px 50px 20px;
+  color: $textSecondary;
+  .header__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 45px;
+    h1{
+      font-size: 32px;
+    }
+    p{
+      font-size: 16px;
+    }
+    a{
+      text-decoration: none;
+      font-size: 12px;
+      color: unset;
+      position: relative;
+      &::after{
+        content: "--->";
+        display: inline-block;
+        position: absolute;
+        width: max-content;
+        height: 2px;
+        left: -50px;
+      }
+    }
+  }
+  .header__gallery{
+    display: grid;
+    gap: 10px;
+    grid-template-column: 140px 100px;
+    grid-template-rows: 82px 82px;
+  }
+  .header__secondary_image{
+    grid-column: 1 / 2;
+    grid-row: 1 / 23;
+  }
+  .header__secondary_image_1{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+  .header__secondary_image_2{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin-top:20px;
+  }
+}

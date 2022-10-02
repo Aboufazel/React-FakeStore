@@ -1,0 +1,23 @@
+@import "../../../style/variable";
+
+.navbar{
+  language: fa;
+  direction: rtl;
+  background-color: $backgroundColor;
+  .navbarContent{
+    display: flex;
+    justify-content: space-between;
+  }
+  ul{
+    padding: 0;
+    display: flex;
+    gap: 40px;
+    color: white;
+    list-style: none;
+    a{
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+    }
+  }
+}
